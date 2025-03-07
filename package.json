@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "better-sqlite3": "^11.8.1",
     "david-ai": "^1.0.6",
     "flowbite-react": "^0.10.2",
     "next": "15.1.6",

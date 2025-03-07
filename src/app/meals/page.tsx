@@ -1,14 +1,15 @@
 import Link from "next/link";
 import Container from "@/components/container";
+import MealsGrid from "@/components/meals-grid";
+import { getMeals } from "@/lib/meals";
 
-export default function MealsPage() {
+export default async function MealsPage() {
+  const meals = await getMeals();
+
   return (
     <Container>
       <div className="relative pt-36">
-        <h1>This is meals page</h1>
-        <p><Link href="/meals/share">Share Meal</Link></p>
-        <p><Link href="/meals/meal-1">Meal1</Link></p>
-        <p><Link href="/meals/meal-2">Meal2</Link></p>
+        <MealsGrid meals={meals} />
       </div>
     </Container>
   );
