@@ -7,3 +7,10 @@
   --color-secondary: var(--color-orange-600);
   --color-info: var(--color-blue-600);
 }
+
+
+#links-group {
+  .active {
+     @apply text-white bg-gray-900;
+  }
+}

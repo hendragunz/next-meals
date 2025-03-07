@@ -31,7 +31,7 @@ export default function MainHeader() {
                 <div className="w-full">
                   <div id="links-group" className="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-x-2 lg:text-sm">
                     <NavLink href="/meals">Browse Meals</NavLink>
-                    <NavLink href="/meals">Foodies Community</NavLink>
+                    <NavLink href="/community">Foodies Community</NavLink>
                   </div>
                 </div>
               </div>
