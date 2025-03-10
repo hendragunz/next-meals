@@ -1,7 +1,8 @@
 import Container from "@/components/container"
 import ImagePicker from "@/components/meals/image-picker"
+import { shareMeal } from "@/lib/actions"
 
-export default function BlogPostPage() {
+export default function ShareMealPage() {
   return (
     <Container>
       <div className="relative pt-36">
@@ -12,7 +13,7 @@ export default function BlogPostPage() {
         </p>
 
         <div className="w-full mt-10 max-w-[550px] ">
-          <form>
+          <form action={shareMeal}>
             <div className="-mx-3 flex flex-wrap">
               <div className="w-full px-3 sm:w-1/2">
                 <div className="mb-5">
@@ -67,7 +68,7 @@ export default function BlogPostPage() {
             </div>
 
             <div className="mb-5">
-              <ImagePicker />
+              <ImagePicker label="Your image" forName="image"  />
             </div>
 
             <div>

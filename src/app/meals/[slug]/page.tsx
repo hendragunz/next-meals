@@ -4,11 +4,6 @@ import { notFound } from "next/navigation"
 import { getMeal } from "@/lib/meals"
 import Link from "next/link"
 
-// async function getMeal(slug: string): {
-//   const meal = await getMeal(slug)
-//   return meal
-// }
-
 export default async function MealPage({ params }) {
   const meal = await getMeal(params.slug)
 
