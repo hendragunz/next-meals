@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Suspense } from "react"
 import Container from "@/components/container"
-import MealsGrid from "@/components/meals-grid"
+import MealsGrid from "@/components/meals/meals-grid"
 import { getMeals } from "@/lib/meals"
 
 async function Meals() {
@@ -29,10 +29,12 @@ export default function MealsPage() {
 
             <div className="mt-5 sm:flex md:mt-8">
               <div className="rounded-md shadow">
-                <a href=""
-                  className="flex items-center justify-center w-full px-6 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-500 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue md:py-2 md:text-lg md:px-8">
+                <Link
+                  href="/meals/share"
+                  className="flex items-center justify-center w-full px-6 py-2 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-blue-500 border border-transparent rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue md:py-2 md:text-lg md:px-8"
+                >
                   Share your favorite recipe
-                </a>
+                </Link>
               </div>
 
               {/* <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
